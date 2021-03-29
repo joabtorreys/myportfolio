@@ -1,3 +1,28 @@
-h1 {
-  background-color: red;
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* end of reset  */
+#header {
+  height: 50vh;
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.header-title {
+  background-color: yellow;
+  grid-column: 1/4;
+}
+.header-nav {
+  background-color: #a7472a;
+  grid-column: 4/7;
+}
+.header-burger {
+  grid-column: 5/7;
+  grid-row: 3/7;
+  background-color: green;
 }
