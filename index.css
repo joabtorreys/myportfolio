@@ -72,6 +72,15 @@
   width: 100vw;
 }
 
+/* end of header section */
+.main {
+  height: 90vh;
+  background-image: url("./assets/five.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* media quries for tablets */
 @media screen and (max-width: 700px) {
 }
