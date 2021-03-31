@@ -2,24 +2,28 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 /* end of reset  */
 #header {
   height: 10vh;
   background-color: lightgrey;
+  color: white;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 
 .header-title {
-  background-color: yellow;
+  background-color: #2196f3a8;
   grid-column: 1/5;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: calc(0.5rem + 0.6vw);
-  text-transform: capitalize;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px hsl(7, 80%, 72%);
 }
 
 #burger {
@@ -28,13 +32,21 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-size: calc(0.7rem + 0.9vw);
+  text-transform: uppercase;
+  background-color: #2196f3c4;
+  color: aliceblue;
+  font-weight: bold;
+}
+#burger:hover {
+  font-size: calc(1rem + 1vw);
 }
 
 .header-nav {
-  background-color: chartreuse;
+  background-color: #03a9f4;
   position: absolute;
   top: 10vh;
-  height: 60vh;
+  height: 70vh;
   width: 0vw;
   transition: width 500ms ease-in-out;
   overflow: hidden;
@@ -47,15 +59,13 @@
   align-items: center;
 }
 
-.navlinks li {
-  text-decoration: none;
-  list-style: none;
-}
 .navlinks li a {
-  text-decoration: none;
   font-size: calc(0.8rem + 0.9vw);
   text-transform: capitalize;
-  color: black;
+  color: white;
+}
+.navlinks li a:hover {
+  font-size: calc(1rem + 1.5vw);
 }
 
 .active {
