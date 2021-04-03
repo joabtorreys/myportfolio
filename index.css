@@ -6,7 +6,16 @@
     text-decoration: none;
     list-style: none;
   }
+/* custom styles */
+.bgline{
+width: 25%;
+height: 7%;
+margin: 1.5%;
+  background-color: #effeff;
+}
 
+
+/* custom styles */
   /* end of reset  */
   #header {
     height: 10vh;
@@ -17,7 +26,7 @@
   }
 
   .header-title {
-    background-color: #2196f3a8;
+    background-color: black;
     grid-column: 1/5;
     display: flex;
     justify-content: center;
@@ -25,6 +34,7 @@
     font-size: calc(0.5rem + 0.6vw);
     text-transform: uppercase;
     text-shadow: 2px 2px 3px hsl(7, 80%, 72%);
+
   }
 
   #burger {
@@ -33,43 +43,53 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: calc(0.6rem + 0.7vw);
-    text-transform: uppercase;
-    background-color: #2196f3c4;
-    color: aliceblue;
-    font-weight: bold;
+    background-color: #03a9f4;
+      grid-column: 5/7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
   }
+ 
   #burger:hover {
     font-size: calc(1rem + 1vw);
   }
 
   .header-nav {
-    background-color: #03a9f4;
+    background:rgb(0 0 0 / 80%);
     position: absolute;
     top: 10vh;
-    height: 70vh;
+    height: 90vh;
     width: 0vw;
     transition: width 500ms ease-in-out;
     overflow: hidden;
     z-index: 5;
-    text-decoration: underline;
-    letter-spacing: 1px;
+   
   }
   .navlinks {
+    padding: 5%;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+   
   }
+  .navlinks li{
 
+    padding: 4%;
+  }
   .navlinks li a {
-    font-size: calc(0.8rem + 0.9vw);
-    text-transform: capitalize;
+    font-size: calc(0.9rem + 0.8vw);
+    text-transform: uppercase;
     color: white;
+    font-weight: bold;
+
   }
   .navlinks li a:hover {
     font-size: calc(1rem + 1.5vw);
+    color: #03a9f4;
   }
 
   .active {
