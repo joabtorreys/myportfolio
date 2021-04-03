@@ -59,4 +59,10 @@
   background-color: #d1deeb;
   margin: 3%;
   margin-top: 4%;
+  text-align: center;
+
+}
+.tag{
+padding: 2vw;
+color: red;
 }
