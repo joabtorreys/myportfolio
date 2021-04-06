@@ -8,7 +8,6 @@
 
 #header {
   height: 10vh;
-  background-color: lightgrey;
   color: white;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -17,52 +16,68 @@
   background-color: #2196f3a8;
   grid-column: 1/5;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  font-size: calc(0.5rem + 0.6vw);
+ font-size: clamp(5px, 5vw , 35px);
   text-transform: uppercase;
   text-shadow: 2px 2px 3px hsl(7, 80%, 72%);
-  padding-left: 6vw;
+
 }
 .header-nav {
   background-color: #03a9f4;
   grid-column: 5/7;
-}
-.navlinks {
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
+.nav-links {
+display: block;
+font-size: clamp(5px, 3vw , 25px);
+text-transform: uppercase;
+color: white;
 
-.navlinks li a {
-  font-size: calc(0.8rem + 0.9vw);
-  text-transform: capitalize;
-  color: white;
 }
-.navlinks li a:hover {
-  font-size: calc(1rem + 1.5vw);
-  color: tomato;
-}
+
 .main {
-  width: 100vw;
   height: 90vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(9, 10vh);
 }
-.mainitems {
-  width: 40%;
-  height: 20%;
-  border-left: 1px solid black;
-  background-color: #d1deeb;
-  margin: 3%;
-  margin-top: 4%;
-  text-align: center;
 
+
+
+.telephone{
+background-color: #ad4f0f;
+grid-column: 1/7;
+grid-row: 1/2;
 }
-.tag{
-padding: 2vw;
-color: red;
+
+.email{
+  background-color: #21dd31;
+  grid-column: 1/7;
+  grid-row: 2/4;
+}
+
+
+.social{
+  background-color: #2814e0;
+  grid-column: 1/7;
+  grid-row: 4/6;
+}
+
+
+
+
+
+
+
+.textone{
+  font-size: clamp(5px, 5vw , 23px);
+color: white;
+}
+.texttwo{
+  font-size: clamp(5px, 3vw , 18px);
+  color: white;
 }

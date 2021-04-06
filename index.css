@@ -73,7 +73,7 @@
     align-items: center;
   }
   .navlinks li {
-    padding: 4%;
+    padding: 10%;
   }
   .navlinks li a {
     font-size: calc(0.9rem + 0.8vw);
@@ -83,7 +83,6 @@
   }
   .navlinks li a:hover {
     font-size: calc(1rem + 1.5vw);
-    color: #03a9f4;
   }
 
   .active {

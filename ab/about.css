@@ -75,3 +75,12 @@
   line-height: 1.2;
   color: white;
 }
+.codecamp{
+  display: block;
+  font-size: calc(0.8rem + 0.6vw);
+  font-family: cursive;
+  color: #ff0000d1;
+  text-decoration: underline;
+  padding: 10px;
+  font-weight: 300;
+}
