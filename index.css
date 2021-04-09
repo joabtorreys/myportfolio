@@ -244,7 +244,7 @@
   /* custom styles */
   /* end of reset  */
   #header {
-    height: 8vh;
+    height: 6vh;
     background-color: lightgrey;
     color: white;
     display: grid;
@@ -257,9 +257,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(6px, 4vw, 30px);
+    font-size: clamp(10px, 0.6vw, 20px);
     text-transform: uppercase;
     text-shadow: 2px 2px 3px hsl(7, 80%, 72%);
+    word-spacing: 4px;
   }
   .header-nav {
     grid-column: 3/7;
@@ -269,7 +270,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     padding-inline-start: 0;
     margin-block-start: 0;
@@ -280,41 +281,42 @@
     text-transform: uppercase;
     color: white;
     font-weight: bold;
-    font-size: clamp(10px, 2vw, 60px);
+    font-size: clamp(13px, 0.8vw, 20px);
+    margin: 30px;
   }
   .navlinks li a:hover {
-    font-size: calc(0.7rem + 0.8vw);
+    font-size: calc(0.5rem + 0.5vw);
     color: gray;
   }
   .main {
     position: relative;
-    height: 92vh;
+    height: 94vh;
     background-image: url("./assets/five.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   .maincontent {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(16 16 16 / 72%);
     width: 100%;
     position: absolute;
     top: 0;
-    height: 30%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 20px;
+    border-bottom: 1px solid black;
   }
   .tagline {
-    color: black;
-    font-size: clamp(10px, 4vw, 100px);
+    color: white;
+    font-size: clamp(5px, 1.4vw, 50px);
     text-transform: capitalize;
-    margin-bottom: 2%;
   }
   .maincontent p {
-    color: #0000007d;
-    font-size: clamp(10px, 3vw, 100px);
+    color: white;
+    font-size: clamp(10px, 1vw, 50px);
     text-transform: lowercase;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -322,8 +324,8 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    color: #ffffffa6;
-    font-size: calc(0.4rem + 0.5vw);
+    color: white;
+    font-size: calc(0.2rem + 0.3vw);
     text-transform: capitalize;
     font-family: cursive;
     margin: 3px;
