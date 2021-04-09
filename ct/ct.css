@@ -34,8 +34,6 @@
   font-size: clamp(5px, 3.5vw, 25px);
   text-transform: uppercase;
   color: white;
-
-
 }
 
 .main {
@@ -47,7 +45,6 @@
 }
 
 .telephone {
- 
   grid-column: 1/7;
   grid-row: 1/4;
   display: flex;
@@ -57,7 +54,6 @@
 }
 
 .email {
-
   grid-column: 1/7;
   grid-row: 4/7;
   display: flex;
@@ -67,7 +63,6 @@
 }
 
 .social {
-
   grid-column: 1/7;
   grid-row: 7/10;
   display: flex;
@@ -85,4 +80,20 @@
 .texttwo {
   font-size: clamp(5px, 3.2vw, 18px);
   color: white;
+}
+
+.mediawrapper {
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mediawrapper a {
+  display: block;
+  margin: 5%;
+}
+.mediawrapper a i {
+  color: white;
+  font-size: clamp(5px, 7vw, 50px);
 }
