@@ -41,7 +41,7 @@
   background-color: #063d52;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(9, 10vh);
+  grid-template-rows: repeat(9, 9vh);
 }
 
 .telephone {

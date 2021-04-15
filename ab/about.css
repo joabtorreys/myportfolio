@@ -206,7 +206,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(0.8vw + 4px);
+    font-size: clamp(12px, 0.9vw, 18px);
     text-transform: uppercase;
     text-shadow: 2px 2px 3px hsl(7, 80%, 72%);
   }
@@ -220,7 +220,7 @@
 
   .header-nav a {
     color: white;
-    font-size: calc(1vw + 4px);
+    font-size: clamp(14px, 1vw, 24px);
     text-transform: uppercase;
     padding-right: 10%;
   }
@@ -250,23 +250,28 @@
     background-color: black;
     height: 45vh;
     width: 40vw;
-    padding: calc(4%);
-    text-align: center;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .toptitle {
     font-size: calc(1vw + 10px);
-    color: white;
+    color: #bb2e2e;
+    text-transform: uppercase;
   }
 
   .textstyle {
-    font-size: calc(1vw + 8px);
+    font-size: clamp(18px, 1.5vw, 36px);
     color: white;
     line-height: 1.2;
+    margin: 4%;
+    text-align: center;
   }
   .codecamp {
     font-size: calc(1vw + 7px);
     color: yellow;
+    text-transform: capitalize;
   }
 }
